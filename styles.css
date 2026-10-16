@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%; 
+    margin: 20px 0;
+}
+
+.sidebar {
+    flex: 1; 
+    background-color: #ecf2f6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#email-link {
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 2; 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+a[href] {
+    color: #000acc;
+    text-decoration: none;
+}
+
+a[href]:hover {
+    text-decoration: underline;
+    color: #004488;
+}
+
+ul li b {
+    color: #ff0000;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+}
