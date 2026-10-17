@@ -18,7 +18,7 @@ function Experience() {
                 </div>
                 <div className="flex justify-center pr-6 ">
                     <img 
-                        src="/src/assets/avatar.jpg" 
+                        src="/src/assets/images/avatar.jpg" 
                         alt="Куць Станіслав" 
                         className="w-48 h-48 rounded-2xl object-cover shadow-xl/20 border border-gray-200 ">
 
