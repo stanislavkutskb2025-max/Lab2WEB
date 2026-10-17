@@ -23,12 +23,8 @@ function Experience() {
                         className="w-48 h-48 rounded-2xl object-cover shadow-xl/20 border border-gray-200 ">
 
                     </img>
-                    
-                </div>
-
-                
+                </div>  
             </div>
-
         </section>
     );
 }
