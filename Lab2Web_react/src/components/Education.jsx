@@ -1,9 +1,9 @@
 function Education() {
     return (
-        <section align="left">
+        <section className = "pl-6">
 
             <br />
-            <h2>Освіта:</h2>
+            <h className="text-2xl font-bold">Освіта:</h>
 
         <ul>
 
