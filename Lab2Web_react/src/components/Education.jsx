@@ -12,6 +12,10 @@ function Education() {
             <li><b>Роки навчання:</b> 2025 – 2029</li>
 
         </ul>
+        <br/>
+        <ul>
+            <li> <b>Мої навички:</b>MySQL, Python, C#, HTML5, CSS3, JavaScript</li>
+        </ul>
 
         </section>
     );
