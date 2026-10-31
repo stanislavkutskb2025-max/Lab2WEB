@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "uk">
+<head>
+    <title>Lab4</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+<header>
+    <h1>Мій сайт</h1>
+    <button id="theme-toggle">Змінити тему</button>
+    
+    
+</header>
+<main>
+    <section id = "rewiewsSection">
+        <h2>Відгуки роботодавців</h2>
+        <div id="commentsContainer"></div>
+        
+
+
+
+    </section>
+    
+</main>
+<footer>
+    <h3>Системна інформація:</h3>
+    <p id="SystemInfo"></p>
+</footer>
+
+<div id="feedbackModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <button id="closeModal">&times;</button>
+        <h3>Форма зворотного зв'язку</h3>
+        <form action="https://formspree.io/f/mzeeawbg" method="POST">
+            <label>Ім'я:
+                
+                <input type="text" name="name" required>
+            </label>
+            <label> Email:
+                <input type="email" name="email" required>
+            </label>
+            <label> Телефон:
+                
+                <input type="tel" name="phone" required>
+            </label>
+            <label> Повідомлення:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Надіслати</button>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
