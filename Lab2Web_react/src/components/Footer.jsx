@@ -1,4 +1,17 @@
+import React, { useState, useEffect } from "react";
+
 function Footer() {
+    const [info, setInfo] = useState(null);
+
+    useEffect(() => {
+        const currentData = {
+            platform: navigator.platform,
+            userAgent: navigator.userAgent,
+        }
+        localStorage.setItem('userInfo', JSON.stringify(currentData));
+
+        setInfo(currentData);
+    }, []);
     return (
         <footer className = " pl-6">
                 <div className="flex justify-start">   
@@ -47,6 +60,13 @@ function Footer() {
                     </div>
                 </div>
             <h5>© 2026 Куць Станіслав. Всі права захищені</h5>
+            <br />
+            <h3>Системна інформація:</h3>
+            {info ? (
+                <p>Платформа: {info.platform} | Браузер: {info.userAgent}</p>
+            ) : (
+                <p>Завантаження системної інформації...</p>
+            )}
         </footer>
     );
 }
